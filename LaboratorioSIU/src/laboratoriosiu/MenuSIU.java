@@ -14,6 +14,9 @@ public class MenuSIU extends javax.swing.JFrame {
     /**
      * Creates new form MantenimientoAlumnoJorgeC
      */
+    private Carreras_Brayan_99591811113 ventana_carreras;
+    private Facultad_Brayan_99591811113 ventana_facultad;
+    
     public MenuSIU() {
         initComponents();
     }
@@ -27,6 +30,7 @@ public class MenuSIU extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDesktopPane1 = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
@@ -42,6 +46,17 @@ public class MenuSIU extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
+        jDesktopPane1.setLayout(jDesktopPane1Layout);
+        jDesktopPane1Layout.setHorizontalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 888, Short.MAX_VALUE)
+        );
+        jDesktopPane1Layout.setVerticalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 603, Short.MAX_VALUE)
+        );
+
         jMenu1.setText("Mantenimientos");
 
         jMenuItem3.setText("Mantenimiento Maestros");
@@ -51,6 +66,11 @@ public class MenuSIU extends javax.swing.JFrame {
         jMenu1.add(jMenuItem1);
 
         jMenuItem4.setText("Mantenimiento Facultad");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem4);
 
         jMenuItem8.setText("Mantenimiento Secciones");
@@ -62,6 +82,11 @@ public class MenuSIU extends javax.swing.JFrame {
         jMenu1.add(jMenuItem8);
 
         jMenuItem11.setText("Mantenimiento Carrera");
+        jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem11ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem11);
 
         jMenuBar1.add(jMenu1);
@@ -89,11 +114,11 @@ public class MenuSIU extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jDesktopPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 277, Short.MAX_VALUE)
+            .addComponent(jDesktopPane1)
         );
 
         pack();
@@ -102,6 +127,16 @@ public class MenuSIU extends javax.swing.JFrame {
     private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem8ActionPerformed
+
+    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+        ventana_carreras= new Carreras_Brayan_99591811113();
+        jDesktopPane1.add(ventana_carreras);
+    }//GEN-LAST:event_jMenuItem11ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        ventana_facultad= new Facultad_Brayan_99591811113();
+        jDesktopPane1.add(ventana_facultad);
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -140,6 +175,7 @@ public class MenuSIU extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
